@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row justify-content-between align-items-center main-menu">
+        <div class="col-xs-12 col-md-2" id="username">Ahmad Alsayed</div>
+        <div class="col-1 main-menu-item offset-sm-1" [ngClass]="{'selected':selection[0] === 1}" (click)="onSelectMainMenuItem(0)">Training Academy</div>
+        <div class="col-1 main-menu-item" [ngClass]="{'selected':selection[1] === 1}" (click)="onSelectMainMenuItem(1)">Resort</div>
+        <div class="col-1 main-menu-item selected" [ngClass]="{'selected':selection[2] === 1}" (click)="onSelectMainMenuItem(2)">Settings</div>
+        <div class="col-xs-12 col-md-2" id="logout">Log Out</div>
+    </div>
+
+        <router-outlet class="row main-content"></router-outlet>
+
+    </div>
+

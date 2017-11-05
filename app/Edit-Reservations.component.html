@@ -1,0 +1,34 @@
+<div class="col-12" id="sectionTitle">
+  <div class="row justify-content-center">
+    <div class="col-5">Edit Reservations</div>
+  </div>
+</div>
+
+<table class="col-12">
+  <tr>
+    <th>Date</th>
+    <th>FA3</th>
+    <th>FU3</th>
+    <th>GA3</th>
+    <th>GU3</th>
+
+  </tr>
+  <tr *ngFor="#res of m">
+    <td>
+      <input type="text" name="date" [attr.readonly]="editing !== res ? 'readonly': null" value="{{res.date | date:'shortDate'}}">
+    </td>
+    <td>
+      <input type="text" name="FA3" [attr.readonly]="editing !== res ? 'readonly': null" value="{{res.familyMembersAbove3Years}}">
+    </td>
+    <td>
+      <input type="text" name="FU3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.familyMembersUnder3Years}}">
+    </td>
+    <td>
+      <input type="text" name="GA3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.guestMembersAbove3Years}}">
+    </td>
+    <td>
+      <input type="text" name="GU3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.guestMembersUnder3Years}}">
+    </td>
+    <div class="edit" (click)="onEdit(res)">{{txt}}</div>
+  </tr>
+</table>

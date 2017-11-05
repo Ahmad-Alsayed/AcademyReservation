@@ -1,0 +1,46 @@
+#sectionTitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+td,
+th {
+    min-width: 100px;
+    text-align: center;
+}
+
+th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+table,
+th,
+td {
+    border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
+}
+
+input:read-only {
+    border-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    max-width: 130px;
+}
+
+input {
+    text-align: center;
+    max-width: 130px;
+}
+
+.edit {
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #3498DB;
+    padding-left: 10px;
+    text-align: center;
+}
+
+table {
+    position: relative;
+    left: 1%;
+    width: 90%;
+    background-color: white;
+}

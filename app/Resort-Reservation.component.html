@@ -1,0 +1,18 @@
+<div class="row main-content">
+    <div class="col-xs-12 col-lg-3">
+        <div class="row menu">
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[0] === 1}" (click)="onSideMenuSelect(0)">New Reservation </div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[1] === 1}" (click)="onSideMenuSelect(1)">Edit Reservation</div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[2] === 1}" (click)="onSideMenuSelect(2)">Reports</div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[3] === 1}" (click)="onSideMenuSelect(3)">Settings</div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-9">
+        
+            <New-Reservation class="row" *ngIf="selection[0] === 1" ></New-Reservation>
+            <Edit-Reservations class="row justify-content-center" *ngIf="selection[1] === 1" ></Edit-Reservations>
+        
+    </div>
+       
+        
+</div>

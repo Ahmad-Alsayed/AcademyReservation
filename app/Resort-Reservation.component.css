@@ -1,0 +1,57 @@
+.menu .side-menu-item {
+    color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 4px;
+    font-size: 1.3em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu:first-child {
+    margin-top: 10px;
+}
+
+.menu>.selected-side-menu-item {
+    /* color: #3A539B;
+    text-decoration: underline; */
+    background-color: #3A539B;
+    color: white;
+}
+
+.menu .side-menu-item:hover {
+    -webkit-animation-name: highlight;
+    animation-name: highlight;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes highlight {
+    100% {
+        background-color: #3A539B;
+        color: white;
+    }
+}
+
+@keyframes highlight {
+    100% {
+        background-color: #3A539B;
+        color: white;
+    }
+}
+img{
+    height: 70%;
+    width: 70%;
+    display: inline-block;
+    fill: #3A539B;
+}
+.svg{
+    fill: #3A539B;
+}

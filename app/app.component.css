@@ -1,0 +1,40 @@
+.main-menu {
+    min-height: 10vh;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.main-menu * {
+    text-align: center;
+    max-width: 170px;
+    font-size: 1.2em;
+}
+
+.main-menu-item {
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#logout {
+    color: #E74C3C;
+}
+
+.selected {
+    border: 0.5px solid black;
+}
+
+img {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.container {
+    background-color: white;
+}
+
+.container-fluid {
+    background-color: white;
+}

@@ -1,0 +1,116 @@
+<form class="col-xs-12 col-sm-6 col-md-8 form-section" (ngSubmit)="onSubmit(reservationForm.value)" #reservationForm="ngForm">
+  <div class="row justify-content-center">
+    <div class="componentTitle" id="formTitle">New Reservation</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-lg-4">
+      <div class="row">
+        <div class="col-12">
+          <label for="date">YEAR</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="year" id="year"  ngControl="year" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-4">
+      <div class="row">
+        <div class="col-12">
+          <label for="month">MONTH</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="month" id="month" ngControl="month" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-4">
+      <div class="row">
+        <div class="col-12">
+          <label for="day">DAY</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="day" id="day" ngControl="day" required>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="sectionTitle">Family</p>
+  <div class="row">
+    <div class="col-xs-12 col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <label for="FAbove">ABOVE 3 YEARS</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="FAbove" id="FAbove" ngControl="FAbove"  required>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-xs-12 col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <label for="FUnder">UNDER 3 YEARS</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="FUnder" id="FUnder" ngControl="FUnder"  required>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <p class="sectionTitle">Guests</p>
+  <div class="row">
+    <div class="col-xs-12 col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <label for="GAbove">ABOVE 3 YEARS</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="GAbove" id="GAbove" ngControl="GAbove"  required>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-xs-12 col-lg-6">
+      <div class="row">
+        <div class="col-12">
+          <label for="GUnder">UNDER 3 YEARS</label>
+        </div>
+        <div class="col-12">
+          <input type="text" name="GUnder" id="GUnder" ngControl="GUnder" value="0" required>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <input class="col-3" id="confirmButton" type="submit" value="Confirm">
+  </div>
+
+
+
+
+
+</form>
+<div class="col-xs-12 col-sm-6 col-md-4 employee-data">
+  <div class="row justify-content-center  componentTitle">
+    <div class="col-12">Employee Information</div>
+  </div>
+  <div class="col-12">Name: Ahmad Alsayed</div>
+  <div class="col-12">ID: 1130149</div>
+  <div class="col-12">Phone: 0599-998-196</div>
+  <div class="col-12">Company: Jawwal</div>
+  <div class="col-12">Resort: Jericho</div>
+</div>

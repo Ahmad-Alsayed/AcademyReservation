@@ -1,6 +1,8 @@
 #sectionTitle {
     font-size: 1.5em;
     margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 td,
@@ -9,11 +11,7 @@ th {
     text-align: center;
 }
 
-th {
-    color: rgba(0, 0, 0, 0.6);
-}
 
-table,
 th,
 td {
     border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
@@ -34,8 +32,7 @@ input {
     border-bottom-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     color: #3498DB;
-    padding-left: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 table {
@@ -43,4 +40,11 @@ table {
     left: 1%;
     width: 90%;
     background-color: white;
+}
+tr{
+    height: 35px;
+}
+
+#tableSection{
+    overflow: scroll;
 }

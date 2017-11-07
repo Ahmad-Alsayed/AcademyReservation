@@ -1,10 +1,11 @@
 import { Component, OnInit } from 'angular2/core';
 import {NewReservationComponent} from './New-Reservation.component';
 import {EditReservationsComponent} from './Edit-Reservations.component';
+import {ReportsComponent} from './reports.component';
 
 @Component({
   selector: 'app-Resort-Reservation',
-  directives:[NewReservationComponent,EditReservationsComponent],
+  directives:[NewReservationComponent,EditReservationsComponent,ReportsComponent],
   templateUrl: 'app/Resort-Reservation.component.html',
   styleUrls: ['app/Resort-Reservation.component.css']
 })

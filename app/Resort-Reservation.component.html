@@ -7,10 +7,11 @@
             <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[3] === 1}" (click)="onSideMenuSelect(3)">Settings</div>
         </div>
     </div>
-    <div class="col-xs-12 col-md-9">
+    <div class="col-xs-12 col-lg-9">
         
             <New-Reservation class="row" *ngIf="selection[0] === 1" ></New-Reservation>
             <Edit-Reservations class="row justify-content-center" *ngIf="selection[1] === 1" ></Edit-Reservations>
+            <reports class="row justify-content-around" *ngIf="selection[2] === 1"></reports>
         
     </div>
        

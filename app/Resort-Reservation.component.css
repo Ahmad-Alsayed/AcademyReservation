@@ -11,6 +11,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    white-space: nowrap;
 }
 
 .menu:first-child {
@@ -20,11 +21,12 @@
 .menu>.selected-side-menu-item {
     /* color: #3A539B;
     text-decoration: underline; */
-    background-color: #3A539B;
+    /* background-color: #3A539B; */
+    background-color: #1D70E8;
     color: white;
 }
 
-.menu .side-menu-item:hover {
+.menu .side-menu-item:hover:not(.selected-side-menu-item) {
     -webkit-animation-name: highlight;
     animation-name: highlight;
     -webkit-animation-duration: 0.3s;
@@ -32,26 +34,22 @@
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+.menu{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
 
 @-webkit-keyframes highlight {
     100% {
-        background-color: #3A539B;
-        color: white;
+        /* background-color: #3A539B; */
+        background-color: #DCDCDC;
+        /* color: white; */
     }
 }
 
 @keyframes highlight {
     100% {
-        background-color: #3A539B;
-        color: white;
+        /* background-color: #3A539B; */
+        background-color: #DCDCDC;
+        /* color: white; */
     }
-}
-img{
-    height: 70%;
-    width: 70%;
-    display: inline-block;
-    fill: #3A539B;
-}
-.svg{
-    fill: #3A539B;
 }

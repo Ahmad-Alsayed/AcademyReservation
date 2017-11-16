@@ -1,24 +1,25 @@
-
-#sectionTitle{
+#sectionTitle {
     font-size: 1.5em;
     margin-bottom: 30px;
     margin-top: 10px;
     text-align: center;
 }
 
-th,td{
-    min-width: 85px;
+th,
+td {
+    min-width: 60px;
     border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
     text-align: center;
 }
-#tableSection{
-    
+
+#tableSection {
     overflow: scroll;
-   
 }
-table{
+
+table {
     width: 100%;
 }
-tr{
+
+tr {
     height: 35px;
 }

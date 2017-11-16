@@ -3,38 +3,18 @@
     <div class="componentTitle" id="formTitle">New Reservation</div>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-lg-4">
-      <div class="row">
-        <div class="col-12">
-          <label for="date">YEAR</label>
-        </div>
-        <div class="col-12">
-          <input type="text" name="year" id="year"  ngControl="year" required>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-xs-12 col-lg-4">
-      <div class="row">
-        <div class="col-12">
-          <label for="month">MONTH</label>
-        </div>
-        <div class="col-12">
-          <input type="text" name="month" id="month" ngControl="month" required>
-        </div>
-      </div>
+    <div class="col-12">
+      <label for="date">DATE</label>
     </div>
+    <div class="col-6">
+      <input type="date" name="dt" id="dt" value="{{datepicker.selectedDate | date:'shortDate'}}" readonly>
+      <input type="hidden" name="year" id="y" ngControl="year" [(ngModel)]="datepicker.selectedYear" required>
+      <input type="hidden" name="month" id="m" ngControl="month" [(ngModel)]="datepicker.selectedMonth" required>
+      <input type="hidden" name="day" id="d" ngControl="day" [(ngModel)]="datepicker.selectedDay" required>
+    </div>
+    <app-Datepicker></app-Datepicker>
 
-    <div class="col-xs-12 col-lg-4">
-      <div class="row">
-        <div class="col-12">
-          <label for="day">DAY</label>
-        </div>
-        <div class="col-12">
-          <input type="text" name="day" id="day" ngControl="day" required>
-        </div>
-      </div>
-    </div>
 
   </div>
   <p class="sectionTitle">Family</p>
@@ -45,7 +25,7 @@
           <label for="FAbove">ABOVE 3 YEARS</label>
         </div>
         <div class="col-12">
-          <input type="text" name="FAbove" id="FAbove" ngControl="FAbove"  required>
+          <input type="text" name="FAbove" id="FAbove" ngControl="FAbove" required>
         </div>
       </div>
 
@@ -58,7 +38,7 @@
           <label for="FUnder">UNDER 3 YEARS</label>
         </div>
         <div class="col-12">
-          <input type="text" name="FUnder" id="FUnder" ngControl="FUnder"  required>
+          <input type="text" name="FUnder" id="FUnder" ngControl="FUnder" required>
         </div>
       </div>
 
@@ -74,7 +54,7 @@
           <label for="GAbove">ABOVE 3 YEARS</label>
         </div>
         <div class="col-12">
-          <input type="text" name="GAbove" id="GAbove" ngControl="GAbove"  required>
+          <input type="text" name="GAbove" id="GAbove" ngControl="GAbove" required>
         </div>
       </div>
 

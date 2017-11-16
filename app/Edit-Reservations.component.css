@@ -11,10 +11,10 @@ th {
     text-align: center;
 }
 
-
 th,
 td {
     border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
+    width: 20%
 }
 
 input:read-only {
@@ -41,10 +41,11 @@ table {
     width: 90%;
     background-color: white;
 }
-tr{
+
+tr {
     height: 35px;
 }
 
-#tableSection{
+#tableSection {
     overflow: scroll;
 }

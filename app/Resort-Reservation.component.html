@@ -3,17 +3,19 @@
         <div class="row menu">
             <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[0] === 1}" (click)="onSideMenuSelect(0)">New Reservation </div>
             <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[1] === 1}" (click)="onSideMenuSelect(1)">Edit Reservation</div>
-            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[2] === 1}" (click)="onSideMenuSelect(2)">Reports</div>
-            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[3] === 1}" (click)="onSideMenuSelect(3)">Settings</div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[2] === 1}" (click)="onSideMenuSelect(2)">Edit Reservation(Admin)</div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[3] === 1}" (click)="onSideMenuSelect(3)">Reports</div>
+            <div class="col-12 side-menu-item" [ngClass]="{'selected-side-menu-item':selection[4] === 1}" (click)="onSideMenuSelect(4)">Settings</div>
         </div>
     </div>
     <div class="col-xs-12 col-lg-9">
-        
-            <New-Reservation class="row" *ngIf="selection[0] === 1" ></New-Reservation>
-            <Edit-Reservations class="row justify-content-center" *ngIf="selection[1] === 1" ></Edit-Reservations>
-            <reports class="row justify-content-around" *ngIf="selection[2] === 1"></reports>
-        
+
+        <New-Reservation class="row" *ngIf="selection[0] === 1"></New-Reservation>
+        <Edit-Reservations class="row justify-content-center" *ngIf="selection[1] === 1"></Edit-Reservations>
+        <admin-edit-reservation class="row" *ngIf="selection[2] === 1"></admin-edit-reservation>
+        <reports class="row justify-content-around" *ngIf="selection[3] === 1"></reports>
+
     </div>
-       
-        
+
+
 </div>

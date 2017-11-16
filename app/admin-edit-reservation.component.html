@@ -1,0 +1,45 @@
+<div class="col-12" id="sectionTitle">
+  <div class="row justify-content-center">
+    <div class="col-5">Edit Reservations</div>
+  </div>
+</div>
+
+<form class="col-12 searchBar" (submit)="onSearch(searchParams.value)" #searchParams="ngForm">
+  <div id="matchSearch">
+    <label for="">Match</label>
+    <input type="radio" name="match" id="matchAll" value="All" checked>
+    <label for="">All</label>
+    <input type="radio" name="match" id="matchAny" value="Any">
+    <label for="">Any</label>
+  </div>
+  <div class="inputContainer">
+    <label for="">Company</label>
+    <select type="text" name="" id="">
+      <option value="Jawwal">Jawwal</option>
+      <option value="Paltel">Paltel</option>
+      <option value="Reach">Reach</option>
+    </select>
+  </div>
+  <div class="inputContainer">
+    <label for="">Date</label>
+    <input type="date" name="" id="" value="{{ datepicker.selectedDate | date:'shortDate'}}"readonly>
+    <input type="hidden" name="year"  [(ngModel)]="datepicker.selectedYear" ngControl="year">
+    <input type="hidden" name="month" [(ngModel)]="datepicker.selectedMonth"  ngControl="month">
+    <input type="hidden" name="day"   [(ngModel)]="datepicker.selectedDay"  ngControl="day">
+    <app-Datepicker></app-Datepicker>
+
+
+  </div>
+  <div class="inputContainer">
+    <label for="">ID</label>
+    <input type="text" name="employeeId" id="employeeId" ngControl="id">
+  </div>
+
+
+    <input id="submitBtn" type="submit" value="Search">
+  
+  <hr>
+
+
+
+</form>

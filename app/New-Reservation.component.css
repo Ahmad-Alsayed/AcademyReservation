@@ -25,37 +25,30 @@
     font-size: 1.5em;
 }
 
-
-
 body {
     height: 100%;
 }
 
 #confirmButton {
     border-style: none;
-    height: 50px;
+    height: 45px;
     margin-left: 0px;
     margin-right: 0px;
     color: white;
     cursor: pointer;
-    background-color: #3498DB;
+    background-color: #1D70E8;
 }
-
-
-
-
 
 .employee-data>* {
     margin-bottom: 60px;
     white-space: nowrap;
 }
 
-
-.employee-data tr > td:nth-child(2){
+.employee-data tr>td:nth-child(2) {
     padding-left: 20px;
     color: #3498DB;
 }
-.employee-data{
+
+.employee-data {
     border-left: 0.5px solid rgba(0, 0, 0, 0.2);
 }
-

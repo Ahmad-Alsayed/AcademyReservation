@@ -16,21 +16,21 @@
     </tr>
     <tr *ngFor="#res of m">
       <td>
-        <input type="text" name="date" [attr.readonly]="editing !== res ? 'readonly': null" value="{{res.date | date:'shortDate'}}">
+        <input type="text" name="date" [attr.readonly]="!res.editMode ? 'readonly': null" value="{{res.date | date:'shortDate'}}">
       </td>
       <td>
-        <input type="text" name="FA3" [attr.readonly]="editing !== res ? 'readonly': null" value="{{res.familyMembersAbove3Years}}">
+        <input type="text" name="FA3" [attr.readonly]="!res.editMode ? 'readonly': null" value="{{res.familyMembersAbove3Years}}">
       </td>
       <td>
-        <input type="text" name="FU3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.familyMembersUnder3Years}}">
+        <input type="text" name="FU3" [attr.readonly]="!res.editMode ? 'readonly': null" value="{{res.familyMembersUnder3Years}}">
       </td>
       <td>
-        <input type="text" name="GA3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.guestMembersAbove3Years}}">
+        <input type="text" name="GA3" [attr.readonly]="!res.editMode ? 'readonly': null" value="{{res.guestMembersAbove3Years}}">
       </td>
       <td>
-        <input type="text" name="GU3" [attr.readonly]="editing !==res ? 'readonly': null" value="{{res.guestMembersUnder3Years}}">
+        <input type="text" name="GU3" [attr.readonly]="!res.editMode ? 'readonly': null" value="{{res.guestMembersUnder3Years}}">
       </td>
-      <div class="edit" (click)="onEdit(res)">{{txt}}</div>
+      <div class="edit" (click)="onEdit(res)">{{ getEditTextContent(res) }}</div>
     </tr>
   </table>
 </div>

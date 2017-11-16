@@ -1,0 +1,33 @@
+<div class="datePickerGroup">
+  <img (click)="datepicker.toggleDatePicker()" src="../calendar.png" alt="" class="calendarThumbnail">
+  <div *ngIf="datepicker.datePickerEnabled" class="col-10 datepicker" [ngStyle]="{height: datepicker.getDatePickerHeight()}">
+    <div class="arrow-up"></div>
+    <div class="header">
+
+      <img (click)="datepicker.previousMonth()" class="left" src="../back.png" alt="">
+
+      <h2 id="monthTitle">{{datepicker.currentMonthName()}}</h2>
+
+      <img (click)="datepicker.nextMonth()" class="right" src="../next.png" alt="">
+
+    </div>
+    <table class="content">
+      <tr class="week">
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+        <th>Sa</th>
+      </tr>
+
+      <tr *ngFor="#week of datepicker.weeksInCurrentMonth" class="monthRow">
+        <td *ngFor="#day of week" (click)="datepicker.onSelectDay(day)" [ngStyle]="{display: datepicker.getTableItemStyle(day)}"
+          [ngClass]="{selected: day == datepicker.selectedDay &&  datepicker.selectedMonth == datepicker.currentMonth &&  datepicker.selectedYear == datepicker.currentYear }">{{day}}</td>
+      </tr>
+
+
+    </table>
+  </div>
+</div>

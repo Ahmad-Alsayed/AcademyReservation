@@ -15,18 +15,14 @@ const myres: MyReservationsService[] = [
 })
 export class EditReservationsComponent {
  m = myres;
-  editing;
-txt = "Edit";
+
  
-onEdit(edit){
-  this.editing = edit;
-  console.log(this.editing);
-  if (this.txt === "Edit"){
-   this.txt = "Save";
-  } else{
-    this.txt = "Edit";
-    this.editing = null;
-    
-  }
+onEdit(edit: MyReservationsService){
+  edit.editMode = edit.editMode? 0 : 1;
+ 
+}
+
+getEditTextContent(item: MyReservationsService){
+  return item.editMode ? "Save" : "Edit";
 }
 }
